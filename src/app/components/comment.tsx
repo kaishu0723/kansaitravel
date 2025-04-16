@@ -7,9 +7,7 @@ const comment = () => {
                         ホテル二泊＆往復新幹線（博多-新大阪）：¥40000 ~ 60000<br/>
                         <a href="https://travel.rakuten.co.jp/package/jr/hotel_list/cnt_japan/sub_osaka/?departure=81&placeOfStay=&noOfUnits=1&adults=6&childElementary=0&infantBedMeal=0&infantNone=0&departureDate=2025-05-14&returnDate=2025-05-16&checkInDate=2025-05-14&checkOutDate=2025-05-16">参考：楽天トラベル</a>
                     </li>
-                    <li>観光日：</li>
-                    <li>食費：</li>
-                    <li>土産代</li>
+                    <li>観光費、土産代：¥30000 ~ 40000</li>
                 </ul>
             <h2 className="text-2xl my-2">持ち物</h2>
             <ul className="list-disc pl-8">

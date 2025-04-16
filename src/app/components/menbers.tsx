@@ -10,34 +10,33 @@ const Menbers = () => {
     const [name, setName] = useState('');
 
     // ユーザー一覧取得
-    // useEffect(() => {
-    //     fetch('../api/user')
-    //         .then(res => res.json())
-    //         .then(data => console.log(data));
-    // }, []);
+    useEffect(() => {
+        fetch('../api/user')
+            .then(res => res.json())
+            .then(data => setUsers(data));
+    }, []);
 
     // ユーザー追加
-    const addUser = (e: FormEvent<HTMLFormElement> | MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => {
+    const addUser = async(e: FormEvent<HTMLFormElement> | MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => {
         e.preventDefault();
         if (!name.trim()) return;
-        // const res = await fetch('../api/user', {
-        //     method: 'POST',
-        //     headers: { 'Content-Type': 'application/json' },
-        //     body: JSON.stringify({ name }),
-        // });
-        // const newUser = await res.json();
-        const newUser: User = { id: users.length + 1, name: name };
+        const res = await fetch('../api/user', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name }),
+        });
+        const newUser = await res.json();
         setUsers([...users, newUser]);
         setName('');
     };
 
     // ユーザー削除
-    const deleteUser = (id: number) => {
-        // await fetch('../api/user', {
-        //     method: 'DELETE',
-        //     headers: { 'Content-Type': 'application/json' },
-        //     body: JSON.stringify({ id }),
-        // });
+    const deleteUser = async(id: number) => {
+        await fetch('../api/user', {
+            method: 'DELETE',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id }),
+        });
         setUsers(users.filter(user => user.id !== id));
     };
 
