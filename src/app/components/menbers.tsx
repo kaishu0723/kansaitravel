@@ -10,11 +10,11 @@ const Menbers = () => {
     const [name, setName] = useState('');
 
     // ユーザー一覧取得
-    useEffect(() => {
-        fetch('../api/user')
-            .then(res => res.json())
-            .then(data => console.log(data));
-    }, []);
+    // useEffect(() => {
+    //     fetch('../api/user')
+    //         .then(res => res.json())
+    //         .then(data => console.log(data));
+    // }, []);
 
     // ユーザー追加
     const addUser = (e: FormEvent<HTMLFormElement> | MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => {

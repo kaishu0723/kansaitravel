@@ -6,46 +6,34 @@ const list = () => {
             "day": "Day1",
             "plans": [
                 {
-                    "name": "嵐山竹林",
-                    "link": "https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2683",
-                    "description": "嵐山には多くの食べ歩きができる",
-                    "image": "/images/arashiyama.jpg",
+                    "name": "通天閣",
+                    "link": "https://www.tsutenkaku.co.jp/",
+                    "description": "滑り台がある（有料）",
+                    "image": "/images/tsutenkaku.jpg",
                 },
                 {
-                    "name": "嵐山竹林",
+                    "name": "串カツだるま",
                     "link": "https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2683",
-                    "description": "嵐山には多くの食べ歩きができる",
-                    "image": "/images/arashiyama.jpg",
+                    "description": "有名な串カツ屋らしい",
+                    "image": "/images/daruma.jpg",
                 },
                 {
-                    "name": "嵐山竹林",
+                    "name": "海遊館",
                     "link": "https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2683",
                     "description": "嵐山には多くの食べ歩きができる",
-                    "image": "/images/arashiyama.jpg",
+                    "image": "/images/kaiyukan.jpg",
                 },
                 {
-                    "name": "嵐山竹林",
+                    "name": "あべのハルカス",
                     "link": "https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2683",
                     "description": "嵐山には多くの食べ歩きができる",
-                    "image": "/images/arashiyama.jpg",
+                    "image": "/images/abeno.jpg",
                 },
                 {
-                    "name": "嵐山竹林",
+                    "name": "山賊鶴橋",
                     "link": "https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2683",
                     "description": "嵐山には多くの食べ歩きができる",
-                    "image": "/images/arashiyama.jpg",
-                },
-                {
-                    "name": "嵐山竹林",
-                    "link": "https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2683",
-                    "description": "嵐山には多くの食べ歩きができる",
-                    "image": "/images/arashiyama.jpg",
-                },
-                {
-                    "name": "嵐山竹林",
-                    "link": "https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2683",
-                    "description": "嵐山には多くの食べ歩きができる",
-                    "image": "/images/arashiyama.jpg",
+                    "image": "/images/sanzoku.jpg",
                 },
             ]
         },
@@ -57,18 +45,84 @@ const list = () => {
                     "link": "https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2683",
                     "description": "嵐山には多くの食べ歩きができる",
                     "image": "/images/arashiyama.jpg",
-                }
+                },
+                {
+                    "name": "瑠璃光院",
+                    "link": "https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2683",
+                    "description": "嵐山には多くの食べ歩きができる",
+                    "image": "/images/arashiyama.jpg",
+                },
+                {
+                    "name": "八坂通",
+                    "link": "https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2683",
+                    "description": "嵐山には多くの食べ歩きができる",
+                    "image": "/images/arashiyama.jpg",
+                },
+                {
+                    "name": "道頓堀",
+                    "link": "https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2683",
+                    "description": "嵐山には多くの食べ歩きができる",
+                    "image": "/images/arashiyama.jpg",
+                },
+                {
+                    "name": "卓上サワーおすすめ屋難波",
+                    "link": "https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2683",
+                    "description": "嵐山には多くの食べ歩きができる",
+                    "image": "/images/arashiyama.jpg",
+                },
+                {
+                    "name": "梅田スカイビル",
+                    "link": "https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2683",
+                    "description": "嵐山には多くの食べ歩きができる",
+                    "image": "/images/arashiyama.jpg",
+                },
             ]
         },
         {
             "day": "Day3",
             "plans": [
                 {
-                    "name": "嵐山竹林",
+                    "name": "奈良公園",
                     "link": "https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2683",
                     "description": "嵐山には多くの食べ歩きができる",
                     "image": "/images/arashiyama.jpg",
-                }
+                },
+                {
+                    "name": "東大寺",
+                    "link": "https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2683",
+                    "description": "嵐山には多くの食べ歩きができる",
+                    "image": "/images/arashiyama.jpg",
+                },
+                {
+                    "name": "奈良グルメ",
+                    "link": "https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2683",
+                    "description": "嵐山には多くの食べ歩きができる",
+                    "image": "/images/arashiyama.jpg",
+                },
+                {
+                    "name": "明石海峡大橋",
+                    "link": "https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2683",
+                    "description": "嵐山には多くの食べ歩きができる",
+                    "image": "/images/arashiyama.jpg",
+                },
+                {
+                    "name": "メリケンパーク",
+                    "link": "https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2683",
+                    "description": "嵐山には多くの食べ歩きができる",
+                    "image": "/images/arashiyama.jpg",
+                },
+                {
+                    "name": "Atoa",
+                    "link": "https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2683",
+                    "description": "嵐山には多くの食べ歩きができる",
+                    "image": "/images/arashiyama.jpg",
+                },
+                {
+                    "name": "神戸グルメ",
+                    "link": "https://ja.kyoto.travel/tourism/single01.php?category_id=8&tourism_id=2683",
+                    "description": "嵐山には多くの食べ歩きができる",
+                    "image": "/images/arashiyama.jpg",
+                },
             ]
         },
     ]
@@ -83,19 +137,20 @@ const list = () => {
                                 day.plans.map((plan, planId) => (
 
                                     <li key={planId} className="min-w-[320px] h-[320px] my-4 relative shadow-md rounded-md overflow-hidden">
-                                        <div className="w-[100%] h-2/3 relative">
-                                            <Image
-                                                src={plan.image}
-                                                alt={plan.name}
-                                                fill
-                                                className="object-cover"
-                                            />
-                                        </div>
-                                        <div className="w-[100%] h-1/3 p-4 relative text-gray-400">
-                                            <h3 className="text-black text-[18px]">{plan.name}</h3>
-                                            <a href={plan.link}>リンク</a>
-                                            <p>{plan.description}</p>
-                                        </div>
+                                        <a href={plan.link}>
+                                            <div className="w-[100%] h-2/3 relative">
+                                                <Image
+                                                    src={plan.image}
+                                                    alt={plan.name}
+                                                    fill
+                                                    className="object-cover"
+                                                />
+                                            </div>
+                                            <div className="w-[100%] h-1/3 p-4 relative text-gray-400">
+                                                <h3 className="text-black text-[18px]">{plan.name}</h3>
+                                                <p>{plan.description}</p>
+                                            </div>
+                                        </a>
                                     </li>
 
                                 ))
