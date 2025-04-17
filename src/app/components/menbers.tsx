@@ -1,11 +1,8 @@
 "use client"
 import { useState, useEffect, FormEvent, MouseEvent } from "react"
+import { User } from "../lib/usertype";
 
 const Menbers = () => {
-    type User = {
-        id: number;
-        name: string;
-    };
     const [users, setUsers] = useState<User[]>([]);
     const [name, setName] = useState('');
 
@@ -43,7 +40,7 @@ const Menbers = () => {
     return (
         <div className="m-10 inline-block">
             <p className="text-blue-500">参加者は名前を追加</p>
-            <h1 className="text-2xl my-4">参加者</h1>
+            <h1 className="text-2xl my-4 text-center sm:text-left">参加者</h1>
             <form onSubmit={(e) => addUser(e)}>
                 <input onChange={e => setName(e.target.value)} value={name} type="text" className="border-2" />
                 <button onClick={(e) => addUser(e)} className="bg-black text-white px-2 py-1 rounded-md mx-2">追加</button>

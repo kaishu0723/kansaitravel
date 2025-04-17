@@ -125,7 +125,7 @@ const list = () => {
             {
                 planList.map((day, dayId) => (
                     <section key={dayId} className="m-10">
-                        <h2 className="text-4xl my-4">{day.day}</h2>
+                        <h2 className="text-4xl my-4">{day.day} →</h2>
                         <ul className="flex gap-4 overflow-x-scroll">
                             {
                                 day.plans.map((plan, planId) => (
