@@ -130,7 +130,7 @@ const list = () => {
                             {
                                 day.plans.map((plan, planId) => (
 
-                                    <li key={planId} className="min-w-[320px] h-[320px] my-4 relative shadow-md rounded-md overflow-hidden">
+                                    <li key={planId} className="min-w-[280px] h-[280px] my-4 relative shadow-md rounded-md overflow-hidden">
                                         <a href={plan.link}>
                                             <div className="w-[100%] h-2/3 relative">
                                                 <Image
