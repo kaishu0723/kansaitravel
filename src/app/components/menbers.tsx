@@ -1,5 +1,5 @@
-"use client"
-import { useState, useEffect, FormEvent, MouseEvent } from "react"
+"use client";
+import { useState, useEffect, FormEvent, MouseEvent } from "react";
 import { User } from "../lib/usertype";
 
 const Menbers = () => {
@@ -16,25 +16,19 @@ const Menbers = () => {
     // ユーザー追加
     const addUser = async(e: FormEvent<HTMLFormElement> | MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) => {
         e.preventDefault();
+        const newUser:User ={
+            id:users.length+1,
+            name:name
+        };
         if (!name.trim()) return;
         const res = await fetch('../api/user', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ name }),
+            body: JSON.stringify(newUser),
         });
-        const newUser = await res.json();
         setUsers([...users, newUser]);
         setName('');
-    };
-
-    // ユーザー削除
-    const deleteUser = async(id: number) => {
-        await fetch('../api/user', {
-            method: 'DELETE',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ id }),
-        });
-        setUsers(users.filter(user => user.id !== id));
+        return await res.json();
     };
 
     return (
@@ -48,10 +42,7 @@ const Menbers = () => {
             <ul className="relative w-2/3">
                 {
                     users.map((user) => (
-                        <li key={user.id} className="m-2 w-[100%] flex justify-between">
-                            <p>{user.name}</p>
-                            <button onClick={() => deleteUser(user.id)} className="text-red-500">削除</button>
-                        </li>
+                        <li key={user.id} className="m-2">{user.name}</li>
                     ))
                 }
             </ul>
